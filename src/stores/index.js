@@ -1,5 +1,8 @@
-const reducer = () => {
-    console.log("Hello World")
-}
+import { combineReducers } from 'redux'
+import bookReducer from '../reducers/BookReducer'
 
-export default reducer
+const reducer = combineReducers({
+    bookReducer: bookReducer
+})
+
+export default reducer;
